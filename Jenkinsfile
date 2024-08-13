@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKER_IMAGE_NAME = 'mywebapp'
-        EC2_IP = 'YOUR_EC2_PUBLIC_IP'
+        EC2_IP = '34.212.101.247'
         SSH_KEY = '/path/to/your/private/key'
     }
 
