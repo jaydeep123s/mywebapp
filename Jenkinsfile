@@ -3,14 +3,14 @@ pipeline {
 
     environment {
         DOCKER_IMAGE_NAME = 'mywebapp'
-        EC2_IP = '34.212.101.247'
+        EC2_IP = 'YOUR_EC2_PUBLIC_IP'
         SSH_KEY = '/path/to/your/private/key'
     }
 
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/jaydeep123s/mycompany.git'
+                git url: 'https://github.com/jaydeep123s/mywebapp.git', branch: 'main'
             }
         }
 
